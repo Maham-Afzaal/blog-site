@@ -5,7 +5,7 @@ const DynamicPage = ({getData}) => {
   const router = useRouter();
   // const { blogsId } = router.query;
   // const passedData = router.query.items ? JSON.parse(router.query.items) : null;
-  console.log('getdata', getData)
+  
 
   return (
     <Box sx={{backgroundColor:'#F6F1F1',minHeight:'100vh'}}>
