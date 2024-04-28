@@ -1,3 +1,5 @@
+import Footer from '@/Components/Footer';
+import NavBar from '@/Components/NavBar';
 import { Container, Typography,Box } from '@mui/material';
 import { useRouter } from 'next/router';
 
@@ -8,14 +10,25 @@ const DynamicPage = ({getData}) => {
   
 
   return (
-    <Box sx={{backgroundColor:'#F6F1F1',minHeight:'100vh'}}>
+    <>
+    <NavBar/>
+    <Box sx={{paddingTop:'8rem',minHeight:'100vh'}}>
     <Container maxWidth='md'>
-      <Box sx={{padding:5}}>
-        <Typography variant='h3' gutterBottom>{getData?.title}</Typography>
-        <Typography variant='h4' gutterBottom>{getData?.body}</Typography>
+      <Box sx={{padding:{xs:'1',sm:'2'},color:'whitesmoke'}}>
+        <Typography variant='h6' gutterBottom>ID: {getData?.id}</Typography>
+        <br/>
+
+        <Typography variant='h4' gutterBottom>{getData?.title}</Typography>
+        <Typography variant='h5' gutterBottom>{getData?.body}</Typography>
+        <br/>
+        <Typography variant='body1' gutterBottom>Tags: {getData?.tags[0]} , {getData?.tags[1]} ,{getData?.tags[2]}</Typography>
+        <Typography variant='h6' gutterBottom>UserId: {getData?.userId}</Typography>
+        <Typography variant='h5' gutterBottom>Reactions: {getData?.reactions}</Typography>
       </Box>
     </Container>
     </Box>
+    <Footer/>
+    </>
   );
 };
 

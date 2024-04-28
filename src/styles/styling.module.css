@@ -1,47 +1,18 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background-color: #282830;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
 *{
   box-sizing: border-box;
 }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 .boxImg {
-  /* background-image: url(../../public/Homepage.jpg); */
+  background-image: url(../../public/Homepage.jpg);
   background-size: cover;
   width: 100%;
   height: 700px;
   background-position: 51% 42%;
   transition: min-height 0.5s ease;
-  background-color: red;
 }
 .ContactImg {
-  /* background-image: url(./Images/Contact.jpg); */
+  background-image: url(./Images/Contact.jpg);
   background-size: cover;
-  background-color: rgb(56, 51, 51);
   width: 100%;
   height: 600px;
   background-position: 60% 42% !important;
@@ -70,7 +41,7 @@ a {
   }
 
   .shadowCenter {
-    padding: 0.5rem !important;
+    padding: 1rem !important;
   }
 
   .boxCopyright {
@@ -110,7 +81,7 @@ a {
 
 .shadowCenter {
   padding: 2rem;
-  background: radial-gradient(#404040, #282830  70%);
+  background: radial-gradient(#404040, #000000 70%);
 }
 
 .boxCopyright {
